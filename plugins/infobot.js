@@ -13,7 +13,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let str = `
 ╠═〘 ${package.name} 〙 ═
 ╠➥ *Versi* : 1.5.0
-╠➥ *Homepage* : https://github.com/Drz103/RadBot
+╠➥ *Homepage* : https://github.com/PilarV2
 ╠➥ *Issue:* ${package.bugs.url}
 ╠➥ *Prefix:* ' ${usedPrefix} '
 ╠➥ *Menu:* ${usedPrefix}menu
@@ -22,8 +22,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╠➥ *Uptime:* ${uptime}
 ║
 ╠═〘 DONASI 〙 ═
-╠➥ DANA [085714313795]
-╠➥ PULSA [085892962667]
+╠➥ DANA [089625556161]
+╠➥ PULSA [089625556161]
 ║
 ║
 ║${readMore}
@@ -41,12 +41,12 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ║ 
 ╠═ ©2021 ${package.name}
 ╠═ Scrip original by Norutomo
-╠═ Creator : Raditya,Beniismael
+╠═ Creator : PilarTod
 ╠═ Api xsteam :St4r
 ╠═ Resta
 ╠═ Ariq
 ╠═〘 BOTRADITYA 〙 ═`.trim()
-     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©RadBotZ ⁩×͜×', 'Owner', '.owner', 'Menu', '.menu', m)
+     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©ZeusBot ⁩×͜×', 'Owner', '.owner', 'Menu', '.menu', m)
 }
 handler.help = ['infobot']
 handler.tags = ['info']
