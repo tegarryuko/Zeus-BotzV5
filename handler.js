@@ -229,15 +229,15 @@ module.exports = {
         if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
-          if (!('welcome' in chat)) chat.welcome = false
+          if (!('welcome' in chat)) chat.welcome = true
           if (!('detect' in chat)) chat.detect = false
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
           if (!('sDemote' in chat)) chat.sDemote = ''
           if (!('descUpdate' in chat)) chat.descUpdate = true
-          if (!('delete' in chat)) chat.delete = true
-          if (!('antiBadword' in chat)) chat.antiBadword = true
+          if (!('delete' in chat)) chat.delete = false
+          if (!('antiBadword' in chat)) chat.antiBadword = false
           if (!('stiker' in chat)) chat.stiker = false
           if (!('rpg' in chat)) chat.delete = true
           if (!('nsfw' in chat)) chat.delete = false
@@ -245,18 +245,18 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
+          welcome: true,
           detect: false,
           sWelcome: '',
           sBye: '',
           sPromote: '',
           sDemote: '',
           descUpdate: true,
-          delete: true,
+          delete: false,
           stiker: false,
           rpg: true,
           nsfw: false,
-          antiBadword: true,
+          antiBadword: false,
           antiLink: false,
           viewonce: true,
         }
@@ -662,7 +662,7 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'lupa saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar RadBotZ.16*`
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar pler.16*`
   }[type]
   if (unreg) return conn.sendButton(m.chat, `Halo kak ${name} Sebelum menggunakan fitur ini Harap Verify Terlebih dahulu`, watermark, 'Verify', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `© ZeusBotz\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/RadBotZ.jpg')}}})
 }
