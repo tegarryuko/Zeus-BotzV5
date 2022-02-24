@@ -38,7 +38,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'all') tags = {
     'main': 'Utama',
     'game': 'Game',
-    'rpg': 'Rpg'
+    'rpg': 'Epic Rpg'
     'xp': 'Exp & Limit',
     'nsfw': `NSFW ${global.opts['nsfw'] ? '' : '(Dinonaktifkan)'}`,
     'sticker': 'Stiker',
@@ -70,11 +70,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'game') tags = {
     'game': 'Game'
   }
+  if (teks == 'rpg') tags = {
+    'rpg': 'Epic Rpg'
+  }
   if (teks == 'xp') tags = {
     'xp': 'Exp & Limit'
-  }
-  if (teks == 'rpg') tags = {
-    'rpg': 'Rpg'
   }
   if (teks == 'news') tags = {
     'news': 'News'
