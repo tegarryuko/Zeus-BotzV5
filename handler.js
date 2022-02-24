@@ -266,24 +266,24 @@ module.exports = {
         if (settings) {
           if (!'anon' in settings) settings.anon = true
           if (!'anticall' in settings) settings.anticall = true
-          if (!'antispam' in settings) settings.antispam = true
-          if (!'antitroli' in settings) settings.antitroli = true
-          if (!'backup' in settings) settings.backup = false
+          if (!'antispam' in settings) settings.antispam = false
+          if (!'antitroli' in settings) settings.antitroli = false
+          if (!'backup' in settings) settings.backup = true
           if (!isNumber(settings.backupDB)) settings.backupDB = 0
           if (!'groupOnly' in settings) settings.groupOnly = false
           if (!'jadibot' in settings) settings.groupOnly = false
-          if (!'nsfw' in settings) settings.nsfw = true
+          if (!'nsfw' in settings) settings.nsfw = false
           if (!isNumber(settings.status)) settings.status = 0
         } else global.db.data.settings[this.user.jid] = {
           anon: true,
           anticall: true,
-          antispam: true,
-          antitroli: true,
-          backup: false,
+          antispam: false,
+          antitroli: false,
+          backup: true,
           backupDB: 0,
           groupOnly: false,
-          jadibot: false,
-          onsfw: true,
+          jadibot: true,
+          onsfw: false,
           status: 0,
         }
       } catch (e) {
