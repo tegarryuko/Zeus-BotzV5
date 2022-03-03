@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'ZeusBotz tidak aktif' : banned ? 'kamu dibanned' : 'Bot  disini',
-                '©RadBotZ',
+                isBanned ? 'GarXytBotzx tidak aktif' : banned ? 'kamu dibanned' : 'GarXytBotzx disini',
+                '©GarXytBotzx',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -42,7 +42,7 @@ handler.all = async function (m, { isBlocked }) {
 ║
 ╠═ ©2021 Rpg wabot-aq
 ╠═ Scrip original by Nurutomo
-╠═〘 ZeusBotz 〙 ═`.trim(), '©ZeusBotz', 'PEMBAYARAN', '#payment', 'MENU', '#menu', m)
+╠═〘 GarXytBotzx 〙 ═`.trim(), '©GarXytBotzx', 'PEMBAYARAN', '#payment', 'MENU', '#menu', m)
 }
     // backup db
     if (setting.backup) {
