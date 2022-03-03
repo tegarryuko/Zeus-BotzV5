@@ -8,7 +8,7 @@ remoteJid: 'status@broadcast'
 },
 message: {
 locationMessage: {
-name: '©ZeusBotz',
+name: '©GarXytBotzx',
 jpegThumbnail: fs.readFileSync('./src/RadBotZ.jpg')
   }
  }
