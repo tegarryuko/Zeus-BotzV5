@@ -2,9 +2,9 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(fla + 'Source code')).buffer(), `
 *────────「 SCRIPT 」 ────────*
 Hai 👋
-saya radbotz_1
+saya AlpinXD V-5
 Bot Ini Menggunakan Sc dari github
-https://github.com/Drz103
+Private Banh
 `.trim(), '©souce code', 'Thanks', '.tqto')
 handler.help = ['sourcecode']
 handler.tags = ['info']
